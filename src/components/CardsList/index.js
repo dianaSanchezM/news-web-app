@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchNews } from '../../actions';
+import Card from '../Card';
 
-const CardsList = ({category: { path, name}}) => {
-    console.log();
+const CardsList = ({category: { path, name}, news=[], fetchNewsList}) => {
+
+    useEffect(()=>{
+        
+        fetchNewsList(path);
+    }, []);
+    
     return (
-    <div>this is a {name} with {path} categorie</div>
+        <div>
+            {news.map(element => <Card newData={element} />)}
+        </div>
     )
-}
+};
 
-export default CardsList;
+const mapStateToProps = ({ news }) => ({ news });
+
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchNewsList(path) {
+          dispatch(fetchNews(path));
+        }
+      };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardsList);
