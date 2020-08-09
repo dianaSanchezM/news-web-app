@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+nav {
+  background-color: cornsilk;
+  height: 70px;
+  padding: 10px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  padding: 15px;
+}
+
+ul > li {
+  /* border: 1px solid black; */
+  padding: 10px;
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main {
+  padding: 15px;
+}
+
+.nav-item {
+  color: cadetblue;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s all;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  font-size: 19px;
+}
+
+.cursos {
+  padding: 15px;
+}
+
+.curso-description {
+  padding: 10px;
+}
+
+.back-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: gray;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.curso-title {
+  margin-bottom: 10px;
+}
