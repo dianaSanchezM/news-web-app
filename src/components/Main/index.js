@@ -9,9 +9,9 @@ const Main = () => {
             <Route
                 path="/categories/:categorieId"
                 render={({ match }) => {
-                    console.log('cateogrie id', match.params.categorieId)
+                    //console.log('cateogrie id', match.params.categorieId)
                     const param = categories.find(a => a.id === match.params.categorieId);
-                    console.log('param', param)
+                    //console.log('param', param)
                     return <CardsList category={param} />;
                 }}
             />

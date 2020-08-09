@@ -6,9 +6,9 @@ import Card from '../Card';
 const CardsList = ({category: { path, name}, news=[], fetchNewsList}) => {
 
     useEffect(()=>{
-        
+        console.log(path);
         fetchNewsList(path);
-    }, []);
+    },[path]);
     
     return (
         <div>

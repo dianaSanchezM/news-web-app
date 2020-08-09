@@ -1,12 +1,12 @@
 import { ADD_NEWS } from './actionTypes';
 
 export const fetchNews = (path) => {
-    console.log('fetch', path);
+    //console.log('fetch', path);
     return dispatch => {
       fetch("https://api.canillitapp.com/"+path)
         .then(response => response.json())
         .then(response => {
-          console.log("response", response);
+          //console.log("response", response);
           dispatch(addNews(response));
         });
     };
