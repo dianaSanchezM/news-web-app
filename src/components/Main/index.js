@@ -4,23 +4,26 @@ import { categories } from '../../data';
 import News from '../../containers/news';
 
 const Main = () => {
+
     return(
         <Switch>
             <Route exact
+                path="/"
+                render={() => {
+                    return <News category={categories[0]} />;
+                }}
+            />
+            <Route exact
                 path="/categories/:categorieId"
                 render={({ match }) => {
-                    //console.log('cateogrie id', match.params.categorieId)
                     const param = categories.find(a => a.id === match.params.categorieId);
-                    //console.log('param', param)
                     return <News category={param} />;
                 }}
             />
             <Route
                 path="/categories/search/:word"
                 render={({ match }) => {
-                    //console.log('cateogrie id', match.params.categorieId)
                     const params = { name: 'search', path:'/search/'+match.params.word};
-                    //console.log('param', match.params.word)
                     return <News category={params} />;
                 }}
             />

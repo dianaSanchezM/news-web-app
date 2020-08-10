@@ -3,7 +3,6 @@ import { LOADING_ERROR } from './actionTypes';
 import { LOADING_IN_PROGRESS } from './actionTypes';
 
 export const fetchNews = (path) => {
-    //console.log('fetch', path);
     return dispatch => {
 
       dispatch(loadingError(false))
@@ -13,7 +12,6 @@ export const fetchNews = (path) => {
       fetch("https://api.canillitapp.com/"+path)
         .then(response => response.json())
         .then(response => {
-          //console.log("response", response);
           dispatch(loadingInProgress(false))
           dispatch(addNews(response));
         })

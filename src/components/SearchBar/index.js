@@ -10,7 +10,7 @@ const SearchBar = () => {
             <input placeholder='Buscar' value={word} onChange={event => setWord(event.target.value)} type='text'/>
             <Link to={`/categories/search/${word}`}>
                 <button className='btn' type="button">
-                    🔍
+                    <span role="img" aria-label="search">🔍</span>
                 </button>
             </Link>
         </div>

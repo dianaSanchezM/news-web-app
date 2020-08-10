@@ -48,6 +48,6 @@ export const categories = [
     {   
         id: '7',
         path: 'news/category/6',
-        name : 'DISENO',
+        name : 'DISEÑO',
     }
 ];
