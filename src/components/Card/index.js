@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import nophoto from '../../images/no-photo.jpg';
+import nophoto from '../../images/no-photo.png';
 
 const Card = ({data}) => {
     return(
