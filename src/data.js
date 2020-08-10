@@ -18,7 +18,7 @@ export const categories = [
     {
         id: '1',
         path: 'latest/'+formatDate(),
-        name : 'HOME'
+        name : 'INICIO'
     },
     {   
         id: '2',

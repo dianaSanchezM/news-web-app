@@ -11,7 +11,7 @@ const Card = ({data}) => {
             <p >{data.title}</p>
             <h3>{data.source_name}</h3>
               
-            <a href={data.url} className="button">Ver mas</a>
+            <a onClick={() => window.open(data.url)} className="button">Ver mas</a>
             </div>
         </div>
     )
