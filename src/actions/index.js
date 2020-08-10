@@ -7,6 +7,7 @@ export const fetchNews = (path) => {
         .then(response => response.json())
         .then(response => {
           //console.log("response", response);
+          
           dispatch(addNews(response));
         });
     };

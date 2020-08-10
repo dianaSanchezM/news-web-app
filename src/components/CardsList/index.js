@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchNews } from '../../actions';
 import Card from '../Card';
+import './index.css';
 
 const CardsList = ({category: { path, name}, news=[], fetchNewsList}) => {
 
@@ -11,8 +12,8 @@ const CardsList = ({category: { path, name}, news=[], fetchNewsList}) => {
     },[path]);
     
     return (
-        <div>
-            {news.map(element => <Card newData={element} />)}
+        <div className='main'>
+            {news.map(element => <Card data={element} />)}
         </div>
     )
 };

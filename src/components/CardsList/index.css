@@ -1,0 +1,8 @@
+.main{
+    display: grid;
+    background-color:#C78F65;
+    grid-template-columns: 25% 25% 25%;
+    padding: 3rem;
+    grid-gap: 20px;
+    justify-content: center;
+  }

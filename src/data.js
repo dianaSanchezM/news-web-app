@@ -1,7 +1,23 @@
+
+
+function formatDate() {
+    let date = new Date(),
+        month = '' + (date.getMonth() + 1),
+        day = '' + date.getDate(),
+        year = date.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
 export const categories = [
     {
         id: '1',
-        path: '/latest/',
+        path: 'latest/'+formatDate(),
         name : 'HOME'
     },
     {   
@@ -33,10 +49,5 @@ export const categories = [
         id: '7',
         path: 'news/category/6',
         name : 'DISENO',
-    },
-    {
-        id: '8',
-        path: '/search/',
-        name : 'SEARCH'
     }
 ];
