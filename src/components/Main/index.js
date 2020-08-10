@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { categories } from '../../data';
-import CardsList from '../CardsList';
+import CardsList from '../../containers/CardsList';
 
 const Main = () => {
     return(

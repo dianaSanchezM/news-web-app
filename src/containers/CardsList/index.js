@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchNews } from '../../actions';
-import Card from '../Card';
+import Card from '../../components/Card';
 import './index.css';
 
 const CardsList = ({category: { path, name}, news=[], fetchNewsList}) => {
