@@ -1,21 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 import Logo from '../../images/logo1.png'
+import SearchBar from '../SearchBar';
 
 const Header = () => {
     return (
         <div className="navigation-bar">
             <div id="navigation-container">
-            <img src={Logo} alt='Logo'/>
-
-            <ul>
-                {/* <li><a >Home</a></li>
-                <li><a >Projects</a></li>
-                <li><a >About</a></li>
-                <li><a >Services</a></li>
-                <li><a >Get in Touch</a></li> */}
-            </ul>
-            {/*      */}
+                <img src={Logo} alt='Logo'/>
+                <div className='SearchBar'>
+                <SearchBar />
+                </div>
             </div>
         </div>
     );
