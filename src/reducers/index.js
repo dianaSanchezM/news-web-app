@@ -10,6 +10,26 @@ const news = (news =[], {type, payload}) => {
       }
 }
 
+const loadingError = (error = false, action) => {
+  switch (action.type) {
+    case 'LOADING_ERROR':
+      return action.hasErrored;
+    default:
+      return error;
+  }
+}
+
+const loadingInProgress = (loading = false, action) => {
+  switch (action.type) {
+    case 'LOADING_IN_PROGRESS':
+      return action.isLoading;
+    default:
+      return loading;
+  }
+}
+
 export default combineReducers({
-    news
+  loadingError,
+  loadingInProgress,
+  news
 });

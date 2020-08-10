@@ -1,1 +1,6 @@
 export const ADD_NEWS = "ADD_NEWS";
+
+export const LOADING_ERROR = "LOADING_ERROR";
+
+export const LOADING_IN_PROGRESS = "LOADING_IN_PROGRESS";
+
