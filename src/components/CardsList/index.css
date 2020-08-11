@@ -1,16 +1,15 @@
-.main{
-    background-color:#C78F65;
-    padding: 3rem;
-  }
-
-.grid{
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% ;
-  grid-gap: 20px;
-  justify-content: center;
+body{
+  background-color: #c78f65;
 }
 
-.pagination{
-  float: right;
-  padding-right: 10%;
+.main {
+  background-color: #c78f65;
+  padding: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 20px;
+  justify-content: center;
 }
