@@ -7,13 +7,11 @@ const Pagination = ({ index, setIndex, length }) => {
 
   return (
     <div className="pagination">
-      <button onClick={() => setIndex(0)}>&laquo;</button>
-      {indexArray.map((key) => (
-        <button className={(key===index)?'active':''} key={key} onClick={() => setIndex(key)}>
-          {key+1}
-        </button>
-      ))}
-      <button onClick={() => setIndex(indexArray.length-1)}>&raquo;</button>
+      <button onClick={() => setIndex(0)}>&lt;&lt;</button>
+      <button onClick={() => (index>0)?setIndex(index-1):null}>&lt;</button>
+      <>{0 + index * 10} - {10 + index * 10} de {length}</>
+      <button onClick={() => (index+1<indexArray.length)?setIndex(index+1):null}>&gt;</button>
+      <button onClick={() => setIndex(indexArray.length-1)}>&gt;&gt;</button>
     </div>
   );
 };

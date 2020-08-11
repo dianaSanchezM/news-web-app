@@ -23,7 +23,6 @@
     border-radius: .4rem;
     overflow: hidden;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    cursor: pointer;
     transition: 0.2s;  
     grid-template-rows: auto auto;
     text-align: center;

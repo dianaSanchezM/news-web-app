@@ -1,26 +1,24 @@
 .pagination {
   float: right;
   padding: 2% 10% 1% 10%;
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 .pagination button {
   background: none;
   border: none;
-  font-family: arial, sans-serif;
   cursor: pointer;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-weight: bolder;
-  padding: 8px 16px 8px 8px;
+  padding: 8px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
-.pagination button.active {
-  background-color: #4f4f4f;
-  color: white;
-}
-
 .pagination button:hover:not(.active) {
   background-color: #ddd;
+  color: #4f4f4f;
 }
