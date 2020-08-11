@@ -16,37 +16,37 @@ function formatDate() {
 
 export const categories = [
     {
-        id: '1',
+        id: 'home',
         path: 'latest/'+formatDate(),
         name : 'INICIO'
     },
     {   
-        id: '2',
+        id: 'politics',
         path: 'news/category/1',
         name : 'POLITICA',
     }, 
     {   
-        id: '3',
+        id: 'international',
         path: 'news/category/2',
         name : 'INTERNACIONAL',
     }, 
     {   
-        id: '4',
+        id: 'tech',
         path: 'news/category/3',
         name : 'TECNOLOGIA',
     }, 
     {   
-        id: '5',
+        id: 'shows',
         path: 'news/category/4',
         name : 'ESPECTACULOS',
     }, 
     {   
-        id: '6',
+        id: 'sports',
         path: 'news/category/5',
         name : 'DEPORTES',
     }, 
     {   
-        id: '7',
+        id: 'design',
         path: 'news/category/6',
         name : 'DISEÑO',
     }

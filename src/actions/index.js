@@ -12,7 +12,8 @@ export const fetchNews = (path) => {
       fetch("https://api.canillitapp.com/"+path)
         .then(response => response.json())
         .then(response => {
-          dispatch(loadingInProgress(false))
+          dispatch(loadingInProgress(false));
+          console.log('news',response);
           dispatch(addNews(response));
         })
         .catch(() => dispatch(loadingError(true)));
