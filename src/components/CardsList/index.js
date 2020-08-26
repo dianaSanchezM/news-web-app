@@ -19,16 +19,24 @@ const CardsList = ({
 
   if (loadingError) {
     return (
-      <div className="main">
-        <h4>Sorry! There was an error loading the news.</h4>
+      <div className="message">
+        <h1>Sorry! There was an error loading the news.</h1>
       </div>
     );
   }
 
   if (loadingInProgress) {
     return (
-      <div className="main">
-        <h4>Loading…</h4>
+      <div className="message">
+        <h1>Loading…</h1>
+      </div>
+    );
+  }
+
+  if (news.length===0) {
+    return (
+      <div className="message">
+        <h1>No results</h1>
       </div>
     );
   }

@@ -25,10 +25,6 @@ nav {
   justify-content: space-around;
 }
 
-.home {
-  padding: 15px;
-}
-
 ul > li {
   /* border: 1px solid black; */
   padding: 10px;
@@ -39,9 +35,6 @@ li {
   list-style-type: none;
 }
 
-.main {
-  padding: 15px;
-}
 
 .nav-item {
   color: rgb(255, 255, 255);
@@ -59,14 +52,6 @@ li {
   border-bottom: solid #3C6BA2 3px;
 }
 
-.cursos {
-  padding: 15px;
-}
-
-.curso-description {
-  padding: 10px;
-}
-
 .back-btn {
   margin-top: 10px;
   padding: 10px;
@@ -76,8 +61,4 @@ li {
   text-transform: uppercase;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.curso-title {
-  margin-bottom: 10px;
 }

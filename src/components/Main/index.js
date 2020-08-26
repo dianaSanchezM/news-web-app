@@ -22,9 +22,9 @@ const Main = () => {
             />
             <Route
                 path="/categories/search/:word"
-                render={({ match, history }) => {
+                render={({ match}) => {
                     const params = { name: 'search', path:'/search/'+match.params.word};
-                    return <News category={params}  history={history}/>;
+                    return <News category={params} />;
                 }}
             />
         </Switch>

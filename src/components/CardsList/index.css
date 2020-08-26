@@ -4,7 +4,6 @@ body{
 
 .main {
   background-color: #fcfcfc;
-  padding: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +13,13 @@ body{
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 20px;
   justify-content: center;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3C6BA2;   
+  width: 100%;
+  padding-top: 10%;
 }
