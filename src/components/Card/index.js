@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import nophoto from '../../images/no-photo.png';
+import nophoto from '../../images/errorImg-01.svg';
 
 const Card = ({data}) => {
     return(

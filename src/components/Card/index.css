@@ -1,40 +1,42 @@
 .button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    padding: 2%;
-    text-decoration: none;
-    color: #C78F65;
-    float: right;
-    background-color:#4f4f4f;
-    border-radius: .4rem;
-    border: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 2%;
+  text-decoration: none;
+  color: #0c1218;
+  float: right;
+  background-color: #8FB1DA;
+  border-radius: 0.4rem;
+  border: none;
 }
 
 .button:hover {
-    background-color: cornsilk;
-    color: #4f4f4f;
-;}
+  background-color: #b9cadf;
+}
 
+.card {
+  display: grid;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
 
-.card{
-    display: grid;
-    background-color: #fff;
-    border-radius: .4rem;
-    overflow: hidden;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    transition: 0.2s;  
-    grid-template-rows: auto auto;
-    text-align: center;
-  }
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
 
-  
-  .info{
-    padding: 7%;
-    font-size: 16px;
-  }
+.info {
+  padding: 7%;
+  font-size: 16px;
+}
 
-.card img{
-    width: 100%;
-    height: 200px;
-  }
+.card img {
+  width: 100%;
+  height: 200px;
+}

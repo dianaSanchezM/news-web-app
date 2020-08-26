@@ -13,7 +13,8 @@
 }
 
 nav {
-  background-color: cornsilk;
+  background-color: #8FB1DA;
+  border-bottom:4px solid #b7d7ff;
   height: 70px;
   padding: 10px;
 }
@@ -43,16 +44,19 @@ li {
 }
 
 .nav-item {
-  color: cadetblue;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   transition: 0.2s all;
 }
 
 .nav-item:hover {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 19px;
+  font-weight: 800;
+  color: #ffffff;
+  border-bottom: solid #3C6BA2 3px;
 }
 
 .cursos {

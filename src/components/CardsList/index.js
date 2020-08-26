@@ -15,7 +15,7 @@ const CardsList = ({
   useEffect(() => {
     setIndex(0);
     fetchNewsList(path);
-  }, [path]);
+  }, [path, fetchNewsList]);
 
   if (loadingError) {
     return (
@@ -32,7 +32,7 @@ const CardsList = ({
       </div>
     );
   }
-  
+
   return (
     <div>
       <div className="main">
@@ -42,8 +42,11 @@ const CardsList = ({
           ))}
         </div>
 
-          <Pagination index={index} length={news.length} setIndex={(num) => setIndex(num)}/>
-        
+        <Pagination
+          index={index}
+          length={news.length}
+          setIndex={(num) => setIndex(num)}
+        />
       </div>
     </div>
   );
