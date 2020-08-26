@@ -35,7 +35,13 @@ const CardsList = ({
 
   return (
     <div>
+      
       <div className="main">
+      <Pagination
+          index={index}
+          length={news.length}
+          setIndex={(num) => setIndex(num)}
+        />
         <div className="grid">
           {news.slice(0 + index * 10, 10 + index * 10).map((element) => (
             <Card key={element.news_id} data={element} />

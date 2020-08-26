@@ -5,6 +5,8 @@ body{
 .main {
   background-color: #fcfcfc;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid {

@@ -1,29 +1,35 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import "./index.css";
-import search from "../../images/search-01.svg";
+//import search from "../../images/search-01.svg";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   const [word, setWord] = useState("");
+
+  const handleSubmit = () => {
+    props.history.push(`/categories/search/${word}`);
+  }
 
   return (
     <div className="searchBar">
-      <input
-        placeholder="Buscar"
-        value={word}
-        onChange={(event) => setWord(event.target.value)}
-        type="text"
-      />
-      <Link to={`/categories/search/${word}`}>
-        <button className="btn" type="button">
+      <form onSubmit={()=>handleSubmit()}>
+        <input
+          placeholder="Buscar"
+          value={word}
+          onChange={(event) => setWord(event.target.value)}
+          type="text"
+          required
+        />
+        <button className="btn" type="submit">
           {/* <img classname="icon" src={search} alt="search"></img> */}
           <span role="img" aria-label="search">
             🔍
           </span>
         </button>
-      </Link>
+      </form>
+
     </div>
   );
 };
 
-export default SearchBar;
+export default withRouter(SearchBar);
